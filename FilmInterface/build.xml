@@ -8,7 +8,7 @@
     encoding="utf-8"
     debug="yes" 
     debuglevel="lines,vars,source" 
-    destdir="" >
+    destdir="src-generated" >
         <compilerarg line="-processor org.eclipse.persistence.internal.jpa.modelgen.CanonicalModelProcessor"/>
         <compilerarg value="-proc:only" />
         <compilerarg value="-Aeclipselink.persistencexml=META-INF/persistence.xml" />

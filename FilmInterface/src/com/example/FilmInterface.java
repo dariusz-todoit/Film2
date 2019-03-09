@@ -8,6 +8,6 @@ public interface FilmInterface {
   void updateNote (int id, String text);
   int newNote (String text, int projectId);
   List<Object[]> getNotes ();
-  // List<Note> getNotesWithCriteriaApi ();
+  List<Note> getNotesWithCriteriaApi ();
 }
 

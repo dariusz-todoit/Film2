@@ -8,12 +8,12 @@ import javax.ejb.Stateless;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
-// import javax.persistence.criteria.CriteriaBuilder;
-// import javax.persistence.criteria.CriteriaQuery;
-// import javax.persistence.criteria.Root;
-// import javax.persistence.metamodel.Metamodel;
-// import javax.persistence.metamodel.EntityType;
-// import javax.persistence.TypedQuery;
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Root;
+import javax.persistence.metamodel.Metamodel;
+import javax.persistence.metamodel.EntityType;
+import javax.persistence.TypedQuery;
 
 import javax.persistence.EntityManager;
 // import javax.persistence.LockModeType;
@@ -27,8 +27,7 @@ public class FilmEJB implements FilmInterface {
   @PersistenceContext(unitName="something")
   private EntityManager entityManager;
   
- 
-  
+    
   @Override
   public List<Object[]> getNotes () {
     Query query = entityManager.createQuery 
@@ -66,8 +65,9 @@ public class FilmEJB implements FilmInterface {
   }
 
 
+  
 
-	/*
+	
 	@Override
 	public List<Note> getNotesWithCriteriaApi() {
 		CriteriaBuilder cb = entityManager.getCriteriaBuilder();
@@ -86,6 +86,6 @@ public class FilmEJB implements FilmInterface {
 
 
 	}  
-*/
+
 	
 }
